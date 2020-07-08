@@ -28,6 +28,7 @@ export const defineTest = ({
 }
 ```
 
+## Config
 ```jsx
 module.exports = {
   // function call name
@@ -46,6 +47,6 @@ module.exports = {
     
 ## Usage
 
-````bash
+```bash
 find packages/codemod/src -iname '*.spec.ts' -print | xargs jscodeshift -t packages/codemod/src/toNamedParameters/ToNamedParameters.ts --config toNamed.codemod.config.js
 ```
